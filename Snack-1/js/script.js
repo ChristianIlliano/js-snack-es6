@@ -40,5 +40,5 @@ let indexWeightMin = 0;
 
     })
 
-    minBike.innerHTML = `${bike[indexWeightMin].name}`
+    minBike.innerHTML = `${bike[indexWeightMin].name} ${bike[indexWeightMin].weight}`
     console.log(bike[indexWeightMin].name);
