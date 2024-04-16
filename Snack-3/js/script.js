@@ -11,19 +11,38 @@ const automobili = [
     { marca: "Opel", modello: "Corsa", alimentazione: "gpl" }
   ];
 
-  let curCar = automobili[0].alimentazione
-  let arrBenzina = []
-  let arrDiesel = []
-  let arrRest = []
+  let arrBenzina = [];
+  let arrDiesel = [];
+  let arrRest = [];
 
-  const myCarFiltered = automobili.filter((curCar, index) ⇒ {
-
-    if(curCar === automobili[1].alimentazione) {
-        curCar.push(arrBenzina)
-    }
-    return curCar
-    })
+    automobili.filter((curCar) => {
+        if(curCar.alimentazione === "benzina"){
+        return true
+        } else {
+        return false
+        }
+    });
     
-    console.log(curCar)
+    arrBenzina = automobili.filter 
+
+    automobili.filter((curCar) => {
+        if(curCar.alimentazione === "diesel"){
+        return true
+        } else {
+        return false
+        }
+    });
+    
+    arrDiesel = automobili.filter 
+
+    automobili.filter((curCar) => {
+        if(curCar.alimentazione !=="benzina" && !== "diesel" ){
+        return true
+        } else {
+        return false
+        }
+    });
+    
+    arrRest = automobili.filter 
 
 
