@@ -24,3 +24,4 @@ let Squads = [
   
   const squadInfo = Squads.map(({name,fouls})=>({name,fouls}));
   console.log(squadInfo);
+  
