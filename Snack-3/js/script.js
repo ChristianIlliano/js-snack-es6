@@ -9,40 +9,39 @@ const automobili = [
     { marca: "Audi", modello: "A3", alimentazione: "diesel" },
     { marca: "Mercedes-Benz", modello: "EQC", alimentazione: "elettrico" },
     { marca: "Opel", modello: "Corsa", alimentazione: "gpl" }
-  ];
+];
 
-  let arrBenzina = [];
-  let arrDiesel = [];
-  let arrRest = [];
+let arrBenzina = [];
+let arrDiesel = [];
+let arrRest = [];
 
-    automobili.filter((curCar) => {
-        if(curCar.alimentazione === "benzina"){
+automobili.filter((curCar) => {
+    if (curCar.alimentazione === "benzina") {
         return true
-        } else {
+    } else {
         return false
-        }
-    });
-    
-    arrBenzina = automobili.filter 
+    }
+});
 
-    automobili.filter((curCar) => {
-        if(curCar.alimentazione === "diesel"){
+console.log(arrBenzina);
+
+automobili.filter((curCar) => {
+    if (curCar.alimentazione === "diesel") {
         return true
-        } else {
+    } else {
         return false
-        }
-    });
-    
-    arrDiesel = automobili.filter 
+    }
+});
 
-    automobili.filter((curCar) => {
-        if(curCar.alimentazione !=="benzina" && !== "diesel" ){
+console.log(arrDiesel);
+
+automobili.filter((curCar) => {
+    if (curCar.alimentazione !== "benzina" && curCar.alimentazione !== "diesel") {
         return true
-        } else {
+    } else {
         return false
-        }
-    });
-    
-    arrRest = automobili.filter 
+    }
+});
 
+console.log(arrRest);
 
